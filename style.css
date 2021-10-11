@@ -1,0 +1,276 @@
+.container {
+  padding: 0 100px;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+.hero {
+  background: var(--bgSite);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .hero__left {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .hero__left {
+    padding-top: 55px;
+  }
+}
+
+.hero__left h2 {
+  font-family: 'Merriweather Regular';
+  line-height: 4.7rem;
+  font-size: 3.6rem;
+  max-width: 60%;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .hero__left h2 {
+    max-width: 100%;
+    font-size: 3rem;
+  }
+}
+
+.hero__left p {
+  font-family: 'Lato Regular';
+  line-height: 3.2rem;
+  font-size: 1.9rem;
+  margin-top: 17.5px;
+  margin-bottom: 45px;
+  max-width: 65%;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .hero__left p {
+    max-width: 100%;
+    font-size: 1.5rem;
+  }
+}
+
+.hero__left button {
+  background: var(--buttonColor);
+  font-family: 'Lato Regular';
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 14px 50px 12px 50px;
+  border-radius: 5px;
+}
+
+.hero__right {
+  margin: 100px 0;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .hero__right svg {
+    width: 300px;
+  }
+}
+
+.main {
+  margin: 150px 0;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  grid-gap: 68px 0px;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .cards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 68px 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.cards__card {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  max-width: 340px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .cards__card {
+    max-width: 300px;
+  }
+}
+
+.cards__card h2 {
+  font-family: 'Merriweather Bold';
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: #2b2b2b;
+  padding: 24px 0 0 30px;
+}
+
+.cards__card p {
+  font-family: 'Lato Regular';
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #555555;
+  padding: 26px 30px;
+}
+
+.footer {
+  background: #d7d5ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer h2 {
+  font-family: 'Merriweather Regular';
+  font-size: 3.2rem;
+  line-height: 4rem;
+  padding: 85px 0px 60px 0px;
+  color: #2b2b2b;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 470px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .footer__form {
+    width: 90%;
+  }
+}
+
+.footer__form #name, .footer__form #email, .footer__form #celNumber, .footer__form #message {
+  padding: 22px 0px 22px 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-family: 'Lato Regular';
+  font-size: 1.8rem;
+  border: none;
+  resize: none;
+}
+
+.footer__form #name::-webkit-input-placeholder, .footer__form #email::-webkit-input-placeholder, .footer__form #celNumber::-webkit-input-placeholder, .footer__form #message::-webkit-input-placeholder {
+  color: rgba(110, 114, 117, 0.74);
+}
+
+.footer__form #name:-ms-input-placeholder, .footer__form #email:-ms-input-placeholder, .footer__form #celNumber:-ms-input-placeholder, .footer__form #message:-ms-input-placeholder {
+  color: rgba(110, 114, 117, 0.74);
+}
+
+.footer__form #name::-ms-input-placeholder, .footer__form #email::-ms-input-placeholder, .footer__form #celNumber::-ms-input-placeholder, .footer__form #message::-ms-input-placeholder {
+  color: rgba(110, 114, 117, 0.74);
+}
+
+.footer__form #name::placeholder, .footer__form #email::placeholder, .footer__form #celNumber::placeholder, .footer__form #message::placeholder {
+  color: rgba(110, 114, 117, 0.74);
+}
+
+.footer__form button {
+  padding: 13px 0;
+  background: var(--buttonColor);
+  color: #fff;
+  font-family: 'Lato Regular';
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 15px;
+  margin-bottom: 80px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+          box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+}
+
+.tomato {
+  background: tomato;
+  width: 340px;
+  height: 222px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .tomato {
+    width: 300px;
+  }
+}
+
+.tomato.blue {
+  background: #63ecff;
+}
+
+.tomato.pink {
+  background: #F363FF;
+}
+
+.tomato.green {
+  background: #63FF73;
+}
+
+.tomato.yellow {
+  background: #FFDD63;
+}
+
+.tomato.blue2 {
+  background: #6663FF;
+}
+/*# sourceMappingURL=style.css.map */

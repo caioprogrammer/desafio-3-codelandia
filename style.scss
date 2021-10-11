@@ -1,0 +1,205 @@
+.container {
+    padding: 0 100px;
+    @media (min-width:768px) and (max-width:1440px) {
+        padding: 0 40px;
+    }
+    @media (min-width:320px) and (max-width:768px) {
+        padding: 0 10px;
+    }
+}
+.hero {
+    background: var(--bgSite);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media (min-width:768px) and (max-width:1440px) {
+        flex-direction: column;
+    }
+    @media (min-width:320px) and (max-width:768px) {
+        flex-direction: column;
+    }
+
+    &__left {
+        @media (min-width:768px) and (max-width:1440px) {
+            padding-top: 80px;
+        }
+        @media (min-width:320px) and (max-width:768px) {
+            padding-top: 55px;
+        }
+        h2 {
+            font-family: 'Merriweather Regular';
+            line-height: 4.7rem;
+            font-size: 3.6rem;
+            max-width: 60%;
+            @media (min-width:320px) and (max-width:768px) {
+                max-width: 100%;
+                font-size: 3rem;
+            }
+        }
+        p {
+            font-family: 'Lato Regular';
+            line-height: 3.2rem;
+            font-size: 1.9rem;
+            margin-top: 17.5px;
+            margin-bottom: 45px;
+            max-width: 65%;
+            @media (min-width:320px) and (max-width:768px) {
+                max-width: 100%;  
+                font-size: 1.5rem; 
+            }
+        }
+        button {
+            background: var(--buttonColor);
+            font-family: 'Lato Regular';
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+
+            padding: 14px 50px 12px 50px;
+            border-radius: 5px;
+        }
+    }
+    &__right {
+        margin: 100px 0;
+
+        svg {
+            @media (min-width:320px) and (max-width:768px) {
+                width: 300px;
+            }
+        }
+    }
+
+}
+.main {
+    margin: 150px 0;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    grid-gap: 68px 0px;
+    @media (min-width:768px) and (max-width:1440px) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 68px 10px;
+    }
+    @media (min-width:320px) and (max-width:768px) {
+        grid-template-columns: 1fr;;
+    }
+    &__card {
+        background: #fff;
+        box-shadow: 0px 0px 20px rgba(0,0,0, .1);
+        max-width: 340px;
+
+        @media (min-width:320px) and (max-width:768px) {
+            max-width: 300px;
+        }
+
+        h2 {
+            font-family: 'Merriweather Bold';
+            font-size: 2.4rem;
+            line-height: 3rem;
+            color: #2b2b2b;
+
+            padding: 24px 0 0 30px;
+        }
+        p {
+            font-family: 'Lato Regular';
+            font-size: 1.8rem;
+            line-height: 3rem;
+            color: #555555;
+
+            padding: 26px 30px;
+        }
+    }
+}
+
+
+
+.footer {
+    background: #d7d5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-family: 'Merriweather Regular';
+        font-size: 3.2rem;
+        line-height: 4rem;
+        padding: 85px 0px 60px 0px;
+        color: #2b2b2b;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 470px;
+
+        @media (min-width:320px) and (max-width:768px) {
+            width: 90%;
+        }
+
+        #name, #email, #celNumber, #message {
+            padding: 22px 0px 22px 15px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            font-family: 'Lato Regular';
+            font-size: 1.8rem;
+
+            border: none;
+            resize: none;
+            
+            &::placeholder {
+                color: rgba(110,114,117, 0.74);
+            }
+        }
+        
+        button {
+            padding: 13px 0;
+            background: var(--buttonColor);
+            color: #fff;
+            font-family: 'Lato Regular';
+            font-weight: 700;
+            font-size: 2rem;
+            margin-top: 15px;
+            margin-bottom: 80px;
+
+            border-radius: 5px;
+            box-shadow: 0px 5px 5px rgba(23,23,23, .1)
+            
+        }
+    }
+}
+
+
+
+
+
+
+.tomato {
+    background: tomato;
+    width: 340px;
+    @media (min-width:320px) and (max-width:768px) {
+        width: 300px;
+    }
+    height: 222px;
+
+    &.blue {
+        background: #63ecff;
+    }
+    &.pink {
+        background: #F363FF;
+    }
+    &.green {
+        background: #63FF73;
+    }
+    &.yellow {
+        background: #FFDD63;
+    }
+    &.blue2 {
+        background: #6663FF;
+    }
+}
+
+@media (min-width:320px) and (max-width:768px) {
+    
+}
